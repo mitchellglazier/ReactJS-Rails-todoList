@@ -18,6 +18,31 @@ class App extends Component {
       })
   }
 
+  /*
+Initial Start, render first time
+ componentDidMount
+ componentWillMount
+ render
+
+State changes
+  shouldComponentUpdate()
+  componenetWillUpdate()
+  render()
+  ComponentDidUpdate()
+
+Props Chnanges
+  componentWillReceiveProps()
+  shouldComponentReceiveProps()
+  componentWillUpdate()
+  rende()
+  ComponenetDidUpdate()
+
+Unmounting
+  ComponenntWIllMOunt()
+
+
+  */
+
   addItem = (name) => {
     // add the todo item to the database
     // add it to state
@@ -64,6 +89,9 @@ class App extends Component {
   render() {
     return (
       <Container>
+        <div>
+          <h1>Mitchell's Todo List</h1>
+        </div>
         <TodoForm
           addItem={this.addItem}
         />
